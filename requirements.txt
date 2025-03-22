@@ -1,0 +1,60 @@
+# Frameworks Web y API
+fastapi==0.115.11
+starlette==0.46.1
+uvicorn==0.34.0
+python-dotenv==1.0.1
+
+# Redes y Comunicación
+requests==2.32.3
+urllib3==2.3.0
+idna==3.10
+certifi==2025.1.31
+charset-normalizer==3.4.1
+h11==0.14.0
+sniffio==1.3.1
+anyio==4.9.0
+
+# Machine Learning y Optimización
+scikit-learn==1.6.1
+scipy==1.15.2
+joblib==1.4.2
+threadpoolctl==3.6.0
+ortools==9.12.4544
+
+# Análisis y Ciencia de Datos
+numpy==2.2.4
+pandas==2.2.3
+python-dateutil==2.9.0.post0
+pytz==2025.1
+tzdata==2025.1
+
+# GIS y Geoespacial
+geopandas==1.0.1
+osmnx==2.0.1
+networkx==3.4.2
+shapely==2.0.7
+pyproj==3.7.1
+pyogrio==0.10.0
+leaflet==0.0.3
+
+# Utilidades y Misceláneos
+click==8.1.8
+colorama==0.4.6
+six==1.17.0
+packaging==24.2
+immutabledict==4.2.1
+typing_extensions==4.12.2
+
+# Pydantic y Tipado
+pydantic==2.10.6
+pydantic_core==2.27.2
+annotated-types==0.7.0
+
+# Base de Datos
+psycopg2-binary==2.9.10
+
+# Otros
+absl-py==2.2.0
+protobuf==5.29.4
+plotly==6.0.1
+narwhals==1.31.0

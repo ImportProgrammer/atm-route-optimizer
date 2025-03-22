@@ -1,0 +1,44 @@
+atm-route-optimizer-demo/
+│
+├── data/
+│   ├── sample_data/              # Datos de muestra para la demo
+│   │   ├── atms.csv              # Ubicaciones de cajeros de muestra
+│   │   ├── transactions.csv      # Transacciones históricas simplificadas
+│   │   ├── restrictions.csv      # Restricciones horarias básicas
+│   │   └── carriers.csv          # Transportadoras de valores
+│   │
+│   └── bogota_map/               # Datos básicos del mapa de Bogotá
+│
+├── models/
+│   ├── demand_prediction.py      # Modelo simplificado de predicción
+│   └── route_optimizer.py        # Optimizador de rutas básico
+│
+├── src/
+│   ├── data_processing.py        # Procesamiento de datos
+│   ├── visualization.py          # Funciones de visualización
+│   └── utils.py                  # Utilidades generales
+│
+├── api/
+│   ├── main.py                   # API FastAPI principal
+│   ├── routes.py                 # Endpoints básicos
+│   └── models.py                 # Modelos Pydantic básicos
+│
+├── frontend/
+│   ├── static/
+│   │   ├── css/main.css
+│   │   └── js/
+│   │       ├── map.js            # Visualización de mapa
+│   │       └── dashboard.js      # Dashboard básico
+│   │
+│   └── templates/
+│       ├── index.html            # Página principal
+│       └── dashboard.html        # Dashboard simple
+│
+├── notebooks/
+│   ├── 1_data_exploration.ipynb    # Exploración inicial
+│   ├── 2_demand_prediction.ipynb   # Modelo predictivo
+│   ├── 3_route_optimization.ipynb  # Optimización de rutas 
+│   └── 4_integrated_demo.ipynb     # Demo integrada
+│
+├── requirements.txt              # Dependencias
+└── README.md                     # Documentación básica
