@@ -1,6 +1,0 @@
-id,name,base_latitude,base_longitude,capacity,vehicles,service_area
-TDV001,Transportadora Seguridad SA,4.6486,-74.0628,500000000,10,NORTE
-TDV002,TransValues Ltda,4.6212,-74.1347,700000000,15,SUR
-TDV003,Protección Cash SAS,4.7121,-74.0723,600000000,12,CENTRO
-TDV004,Segurtrans S.A.,4.6854,-74.0501,550000000,8,OESTE
-TDV005,Vigilancia Financiera LTDA,4.735,-74.1005,650000000,14,ESTE
