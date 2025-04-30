@@ -42,3 +42,24 @@ atm-route-optimizer-demo/
 │
 ├── requirements.txt              # Dependencias
 └── README.md                     # Documentación básica
+
+
+///////////// API
+api/
+├── main.py                # Punto de entrada principal de la API
+├── models.py              # Modelos Pydantic para la API
+├── routes/
+│   ├── __init__.py        # Inicializador del paquete
+│   ├── atms.py            # Endpoints para cajeros automáticos
+│   ├── routes.py          # Endpoints para optimización de rutas
+│   ├── forecasts.py       # Endpoints para predicciones de demanda
+│   └── stats.py           # Endpoints para estadísticas y KPIs
+├── services/
+│   ├── __init__.py        # Inicializador del paquete
+│   ├── atm_service.py     # Servicios para datos de cajeros
+│   ├── route_service.py   # Servicios para optimización de rutas
+│   └── forecast_service.py # Servicios para predicciones
+└── utils/
+    ├── __init__.py        # Inicializador del paquete
+    ├── data_loader.py     # Utilidades para cargar datos
+    └── geo_utils.py       # Utilidades geoespaciales
