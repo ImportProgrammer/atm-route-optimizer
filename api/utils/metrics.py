@@ -76,12 +76,11 @@ def calculate_improved_kpis(status_df, atms_to_restock):
         for _, atm in atms_to_restock.iterrows():
             idx = improved_status[improved_status['id'] == atm['atm_id']].index
             if len(idx) > 0:
-                # Actualizar efectivo a capacidad máxima
-                improved_status.loc[idx, 'current_cash'] = atm['max_capacity']
+                improved_status.loc[idx, 'current_cash'] = atm.get('max_capacity', atm['current_cash'])
                 improved_status.loc[idx, 'usage_percent'] = 100
                 improved_status.loc[idx, 'status'] = 'Normal'
-                improved_status.loc[idx, 'days_until_empty'] = improved_status.loc[idx, 'days_until_empty'] * 2  # Aproximación
-    
+                improved_status.loc[idx, 'days_until_empty'] = improved_status.loc[idx, 'days_until_empty'] * 2
+
     # Calcular KPIs mejorados
     return calculate_current_kpis(improved_status)
 

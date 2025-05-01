@@ -170,6 +170,12 @@ if run_optimization:
                 'num_vehicles': num_vehicles
             }
         }
+
+        st.session_state["base_routes"] = routes
+        st.session_state["base_atms"] = atms_to_restock
+        st.session_state["carrier"] = selected_carrier
+        st.session_state["status_df"] = current_status  # ya existe arriba
+
         
         # Mostrar resultados
         if routes and len(routes) > 0:
@@ -449,6 +455,10 @@ if simulate_alt:
                 'num_vehicles': alt_num_vehicles
             }
         }
+
+        st.session_state["alt_routes"] = alt_routes
+        st.session_state["alt_atms"] = alt_atms
+
         
         # Mostrar comparación si hay resultados en ambos escenarios
         if 'last_optimization' in st.session_state and alt_routes and len(alt_routes) > 0:
