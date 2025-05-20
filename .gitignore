@@ -1,44 +1,46 @@
-# Ignorar entornos virtuales (comunes en local)
+# 📦 Entornos virtuales y archivos de entorno
 venv/
 .env
 .env.*
 
-# Ignorar archivos y carpetas temporales de Python
+# 🐍 Archivos y carpetas temporales de Python
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 
-# Ignorar cachés de Streamlit
+# 🌐 Cachés de Streamlit (seguridad y tokens locales)
 .streamlit/config.toml
 .streamlit/credentials.toml
 
-# Ignorar archivos temporales de sistema operativo
+# 🖥️ Archivos temporales del sistema operativo
 .DS_Store
 Thumbs.db
 
-# Ignorar bases de datos y resultados generados
+# 📊 Datos y resultados que no se deben subir
 data/db/
 data/tmp/
 data/results/
 *.sqlite3
 
-# Ignorar logs
+# 🪵 Logs y archivos temporales
 logs/
 *.log
-
-# Ignorar archivos de notebook checkpoint
-.ipynb_checkpoints/
-
-# Ignorar configuraciones locales de editor
-.vscode/
-.idea/
+*.bak
 *.swp
 
-# Archivos de prueba o simulaciones guardadas
+# 💻 Configuraciones locales de IDEs
+.vscode/
+.idea/
+
+# 🧪 Simulaciones o archivos generados de pruebas
 simulations/
-*.bak
-.Copia_notebook_4.txt
-.estructura_proyecto.txt
-.estructura.txt
-.Notas.md
+
+# 📓 Checkpoints de Jupyter
+.ipynb_checkpoints/
+
+# 📝 Archivos auxiliares que no deberían rastrearse
+Copia_notebook_4.txt
+estructura.txt
+estructura_proyecto.txt
+Notas.md
