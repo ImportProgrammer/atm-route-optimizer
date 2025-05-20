@@ -38,3 +38,7 @@ logs/
 # Archivos de prueba o simulaciones guardadas
 simulations/
 *.bak
+.Copia_notebook_4.txt
+.estructura_proyecto.txt
+.estructura.txt
+.Notas.md
