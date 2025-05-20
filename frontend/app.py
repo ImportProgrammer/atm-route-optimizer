@@ -28,22 +28,24 @@ st.set_page_config(
 )
 
 # Título principal y descripción del proyecto
-st.title("Sistema de Optimización de Rutas y Provisiones para Cajeros Automáticos")
-st.subheader("Gestión inteligente de efectivo con GIS e IA")
+st.title("Sistema de Optimización de Rutas y Gestión Integral de Cajeros Automáticos")
+st.subheader("Gestión inteligente de efectivo y disponibilidad técnica con GIS e IA")
 
 # Contenido de la página principal
 st.markdown("""
-## Bienvenido a la demostración del sistema de optimización de cajeros
+## Bienvenido a la demostración del sistema de optimización integral de cajeros
 
-Esta aplicación permite gestionar eficientemente la distribución de efectivo en cajeros automáticos 
+Esta aplicación permite gestionar eficientemente la distribución de efectivo y el mantenimiento técnico en cajeros automáticos 
 mediante técnicas avanzadas de georreferenciación e inteligencia artificial.
 
 ### Objetivos de la DEMO
  
 - **Optimizar la operación del centro de efectivo**, asegurando disponibilidad de efectivo en cajeros
+- **Predecir y prevenir fallas técnicas** de componentes mediante modelos de IA
 - **Reducir costos logísticos** mediante rutas eficientes y planificación inteligente
-- **Aumentar la precisión de pronósticos** a más del 87%
-- **Reducir el downtime por agotamiento** a menos del 15%
+- **Aumentar la precisión de pronósticos** de demanda y fallos técnicos a más del 87%
+- **Reducir el downtime** por agotamiento y fallos técnicos a menos del 15%
+- **Integrar mantenimiento preventivo y reabastecimiento** en rutas optimizadas
 - **Mejorar la eficiencia operativa** mediante decisiones basadas en datos
 
 ### Cómo usar la aplicación:
@@ -155,6 +157,33 @@ except Exception as e:
     st.image("https://via.placeholder.com/800x400?text=ATM+Optimization+System", 
             caption="Visualización conceptual del sistema de optimización")
 
+
+# Añadir sección de características principales
+st.markdown("""
+## Características del Sistema
+
+""")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("""
+    ### Gestión de Efectivo
+    - **Predicción de demanda** con modelos de IA
+    - **Optimización de rutas** de reabastecimiento
+    - **Análisis de impacto económico** y financiero
+    - **Simulación de escenarios** operativos
+    """)
+
+with col2:
+    st.markdown("""
+    ### Gestión Técnica
+    - **Predicción de fallas** por componente
+    - **Optimización de mantenimiento** preventivo
+    - **Análisis de disponibilidad** técnica
+    - **Integración** con rutas de reabastecimiento
+    """)
+
 # Información del proyecto en el sidebar
 #st.sidebar.markdown("---")
 
@@ -162,7 +191,7 @@ except Exception as e:
 # Información sobre modo de desarrollo
 if st.sidebar.checkbox("Modo desarrollo", False):
     st.sidebar.info("Desarrollado con Streamlit, Folium y OR-Tools")
-    st.sidebar.write("Versión: 0.1.0")
+    st.sidebar.write("Versión: 0.2.0")
     st.sidebar.write("Estructura actual:")
     st.sidebar.code("""
     atm-optimizer/

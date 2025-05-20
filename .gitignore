@@ -1,9 +1,40 @@
+# Ignorar entornos virtuales (comunes en local)
 venv/
 .env
-cache/
-data/
-# Archivos y directorios de caché de Python
+.env.*
+
+# Ignorar archivos y carpetas temporales de Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
+
+# Ignorar cachés de Streamlit
+.streamlit/config.toml
+.streamlit/credentials.toml
+
+# Ignorar archivos temporales de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar bases de datos y resultados generados
+data/db/
+data/tmp/
+data/results/
+*.sqlite3
+
+# Ignorar logs
+logs/
+*.log
+
+# Ignorar archivos de notebook checkpoint
+.ipynb_checkpoints/
+
+# Ignorar configuraciones locales de editor
+.vscode/
+.idea/
+*.swp
+
+# Archivos de prueba o simulaciones guardadas
+simulations/
+*.bak
